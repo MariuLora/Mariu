@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM_JS</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f5f5f5;
+    }
+    .passport {
+      position: relative;
+      width: 600px;
+      margin: 30px auto;
+      border: 1px solid #ccc;
+      background: white;
+    }
+    .passport img {
+      width: 100%;
+      display: block;
+      border-radius: 8px;
+    }
+    .passport p {
+      position: absolute;
+      font-size: 18px;
+      font-weight: bold;
+      color: #222;
+      margin: 0;
+    }
+    .surname { top: 467px; left: 250px; }
+    .name { top: 530px; left: 250px; }
+    .birth { top: 596px; left: 345px; }
+    .Fname { top: 563px; left: 250px}
+    .gender { top: 595px; left: 235px}
+    .place { top: 630px; left: 250px}
+    .vidacha { top: 87px; left: 125px}
+    .data { top: 180px; left: 125px}
+    .key { top: 180px; left: 355px}
+  </style>
+</head>
+<body>
+    <a href="main_page.html"><strong>Главная</strong></a>
+  <div class="passport">
+    <img src="images/8ccbcba24253a9b7ac5b1a4b5db595c4.jpg" alt="Паспорт">
+    <p class="surname"> <span>Ласкина</span></p>
+    <p class="name"> <span>Мария</span></p>
+    <p class="birth"><span>2006</span></p>
+    <p class="Fname"><span>Сергеевна</span></p>
+    <p class="gender"><span>Ж</span></p>
+    <p class="place"><span>Г Москва</span></p>
+    <p class="vidacha"><span>ГУ МВД По Москве</span></p>
+    <p class="data"><span>12.12.2014</span></p>
+    <p class="key"><span>123-456-789</span></p>
+  </div>
+
+  <button id="convert">Поменять на латиницу</button>
+
+<script>
+  const original = {
+    surname: "Ласкина",
+    name: "Мария",
+    Fname: "Сергеевна",
+    gender: "Ж",
+    place: "Г Москва",
+    vidacha: "ГУ МВД По Москве"
+  };
+
+  const latin = {
+    surname: "Laskina",
+    name: "Maria",
+    Fname: "Sergeevna",
+    gender: "F",
+    place: "Moscow",
+    vidacha: "Gov Dep Moscow"
+  };
+
+  let isLatin = false; 
+
+  document.getElementById('convert').addEventListener('click', function() {
+
+    const data = isLatin ? original : latin;
+
+    document.querySelector('.surname span').innerText = data.surname;
+    document.querySelector('.name span').innerText = data.name;
+    document.querySelector('.Fname span').innerText = data.Fname;
+    document.querySelector('.gender span').innerText = data.gender;
+    document.querySelector('.place span').innerText = data.place;
+    document.querySelector('.vidacha span').innerText = data.vidacha;
+
+    isLatin = !isLatin;
+
+    this.innerText = isLatin ? "Вернуть кириллицу" : "Поменять на латиницу";
+  });
+</script> 
+<p> </p>
+<img src="images/2025-10-22 01.16.52.jpg">
+
+
+    </body>
+
+</html>

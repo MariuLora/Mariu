@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Kelpi The Cat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <header>
+    <h1>Кот Келпи</h1>
+    <nav>
+      <a href="main_page.html">Главная</a> |
+      <a href="about.html">О чем игра?</a> |
+      <a href="diary.html">Журнал Келпи</a> |
+      <a href="work_proc.html">История создания</a> |
+      <a href="contact.html"><strong>Как связаться?</strong></a>
+    </nav>
+  </header>
+<section class="contact">
+  <h2>Контакты</h2>
+
+  <h3>Сотрудничество</h3>
+  <form action="https://dzen.ru/?clid=1985545-217&win=206&yredirect=true" method="get" target="_blank">
+     <p>Имя: 
+    <input type="text" name="name" value="Иван" required>
+  </p>
+
+
+  <p>Возраст: 
+    <input type="number" name="age" value="25" min="1" max="100">
+  </p>
+
+  
+  <p>Пароль: 
+    <input type="password" name="password" value="12345">
+  </p>
+
+
+  <p>Дата регистрации: 
+    <input type="date" name="reg_date" value="2025-10-21">
+  </p>
+
+  
+  <p>Пол:</p>
+  <label><input type="radio" name="gender" value="Женский" checked> Женский</label><br>
+  <label><input type="radio" name="gender" value="Мужской"> Мужской</label>
+
+   <input type="hidden" name="source" value="game_form_default">
+
+  <p>Комментарий:<br>
+    <textarea name="message" rows="5" cols="50">Вайб!</textarea>
+  </p>
+  <p><input type="submit" value="Отправить"></p>
+  </form>
+
+
+  <h3>Опрос игроков</h3>
+  <form action="https://dzen.ru/?clid=1985545-217&win=206&yredirect=true" method="get" target="_blank">
+  <p>Насколько вам интересна игра?</p>
+  <select name="interest">
+    <option value="Очень интересно">Очень интересно</option>
+    <option value="Интересно">Интересно</option>
+    <option value="Нейтрально">Нейтрально</option>
+    <option value="Не интересно">Не интересно</option>
+  </select>
+
+  <p>В какие жанры вы обычно играете?</p>
+  <label><input type="checkbox" name="genre" value="Платформер" checked> Платформер</label>
+  <label><input type="checkbox" name="genre" value="RPG"> RPG</label>
+  <label><input type="checkbox" name="genre" value="Головоломка"> Головоломка</label>
+  <label><input type="checkbox" name="genre" value="Раннер"> Раннер</label>
+  <label><input type="checkbox" name="genre" value="Шутер"> Шутер</label>
+
+  <p><input type="submit" value="Отправить"></p>
+</form>
+</section>
+</body>

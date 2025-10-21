@@ -1,0 +1,58 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;       
+  bottom: 20px;          
+  right: 20px;           
+  width: 50px;           
+  height: 50px;
+  background-color: #0077cc;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  line-height: 50px;    
+  border-radius: 50%;    
+  text-decoration: none;
+  z-index: 9999;        
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: background 0.3s;
+}
+
+.back-to-top:hover {
+  background-color: #005fa3;
+}
+
+
+
+header {
+  background-color: #ffe4e1;
+  position: relative;
+  z-index: 1000;
+  padding: 20px;
+}
+
+
+.fish-table {
+  width: 500px;
+  margin: 50px auto;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: "Georgia", serif;
+  color: #222;
+
+ 
+  background-image: url("images/IMG_4905.PNG"); 
+  background-size: cover;
+  background-position: center;
+}
+
+
+.fish-table th,
+.fish-table td {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 10px 15px;
+  background: transparent; 
+  background-color: rgba(255, 255, 255, 0.6); 
+}
